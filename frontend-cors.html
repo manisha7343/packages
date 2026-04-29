@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>CORS Test</h2>
+<button onclick="getData()">Fetch Data</button>
+
+<script>
+  function getData() {
+    console.log("Button clicked "); 
+    fetch("http://localhost:3000/data")
+      .then(res => res.json())
+      .then(data => console.log("SUCCESS:", data))
+      .catch(err => console.error("ERROR:", err));
+  }
+</script>
+
+</body>
+</html>
