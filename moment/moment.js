@@ -4,6 +4,8 @@ const moment = require("moment")
 //Current date-time
 console.log(moment());
 
+
+
 //formate YYYY-MM-DD
 console.log(moment().format('YYYY-MM-DD'));
 
@@ -56,7 +58,7 @@ const Today = moment();
 console.log(Today.diff(birth, 'years'), `years`);
 
 
-//Deadline tracker 
+// Deadline tracker 
 const tasks = [
     { name:"Assignment", due: "2026-05-01"},
     { name: "project", deu: '2026-04-20'}

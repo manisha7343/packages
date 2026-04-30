@@ -1,5 +1,3 @@
-
-
 const express = require('express');
 const morgan = require('morgan');
 
@@ -41,7 +39,6 @@ app.use(morgan(':method :url :status :res[content-length] - :response-time ms'))
 // app.use(morgan('dev', {
 //   skip: (req, res) => res.statusCode < 400
 // }));
-
 
 
 app.get('/', (req, res) => {

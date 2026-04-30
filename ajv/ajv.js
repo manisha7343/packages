@@ -22,8 +22,10 @@ const validate = ajv.compile(schema);
 
 // API route
 app.post("/user", (req, res) => {
+
   const data = req.body; 
   const valid = validate(data);
+
 
   if (!valid) {
     return res.status(400).json({
@@ -33,7 +35,7 @@ app.post("/user", (req, res) => {
   }
 
   res.json({
-    message: "Valid data ",
+    message: "Valid data",
     data: data
   });
 });

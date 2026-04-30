@@ -4,7 +4,7 @@ const path = require('path');
 
 const app = express();
 
-// 🔥 Storage setup (correct path fix)
+// Storage setup (correct path fix)
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
     cb(null, path.join(__dirname, 'uploads')); // ✅ correct folder
@@ -16,18 +16,18 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage });
 
-// 🧪 Test route
+// Test route
 app.get('/', (req, res) => {
-  res.send('Server working ✅');
+  res.send('Server working ');
 });
 
-// 📤 Upload route
+// Upload route
 app.post('/upload', upload.single('file'), (req, res) => {
   console.log("FILE:", req.file);
-  res.send('File uploaded successfully ✅');
+  res.send('File uploaded successfully ');
 });
 
-// 🚀 Server start
+//Server start
 app.listen(3000, () => {
   console.log('Server running on http://localhost:3000');
 });

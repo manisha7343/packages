@@ -8,7 +8,7 @@
 <script>
   function getData() {
     console.log("Button clicked "); 
-    fetch("http://localhost:3000/data")
+    fetch("http://localhost:5000/data")
       .then(res => res.json())
       .then(data => console.log("SUCCESS:", data))
       .catch(err => console.error("ERROR:", err));
