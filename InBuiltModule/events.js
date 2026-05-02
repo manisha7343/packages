@@ -12,7 +12,7 @@ event.on('greet', () => {
   console.log("Hello event triggered ho gaya");
 });
 
-event.emit('greet');
+event.emit('greet')
 
 event.on('test', () => console.log("First"));
 event.on('test', () => console.log("Second"));

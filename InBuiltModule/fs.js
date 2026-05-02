@@ -23,7 +23,7 @@ fs.appendFileSync('hello.txt', '\n Adding second text(appned operation)')
 
 
 //file delete
-// fs.deleteFileSync('hello.txt')
+// fs.deleteFileSync('hello.txt');
 
 
 

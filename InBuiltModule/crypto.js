@@ -21,7 +21,7 @@ console.log("hashed password = ", hash);
 
 //Random token generate
 const token = crypto.randomBytes(16).toString('hex')
-console.log("token =", token);
+console.log("token =", token)
 
 
  
