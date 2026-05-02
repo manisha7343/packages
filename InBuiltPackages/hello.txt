@@ -1,0 +1,3 @@
+hello i amm writeing the file
+ Adding second text(aappend operation)
+ Adding second text(appned operation)
